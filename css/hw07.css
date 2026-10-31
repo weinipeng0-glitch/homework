@@ -1,0 +1,206 @@
+        /* 設定整個網頁的背景、字體和文字間距 */
+        body {
+            font-family: Arial, "Microsoft JhengHei", sans-serif;
+            background-color: #fff8ee;
+            color: #40352d;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* 設定頁首的背景顏色和文字位置 */
+        header {
+            background-color: #e8d5c0;
+            text-align: center;
+            padding: 25px;
+            border-bottom: 3px solid #b89575;
+        }
+
+        /* 調整主標題的大小和顏色 */
+        h1 {
+            color: #654321;
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* 設定目錄的背景和外框 */
+        nav {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            border: 1px solid #d6bfa8;
+            border-radius: 10px;
+            max-width: 850px;
+        }
+
+        /* 調整目錄連結的顏色 */
+        nav a {
+            color: #795548;
+            text-decoration: none;
+        }
+
+        /* 滑鼠移到連結上時會變色 */
+        nav a:hover {
+            color: #c07845;
+            text-decoration: underline;
+        }
+
+        /* 使用鍵盤選取連結時顯示外框 */
+        nav a:focus-visible {
+            outline: 2px solid #795548;
+            outline-offset: 3px;
+        }
+
+        /* 設定主要內容的背景和寬度 */
+        main {
+            background-color: #ffffff;
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 25px;
+            border: 1px solid #d6bfa8;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        /* 設定小標題的顏色和底線 */
+        h2 {
+            color: #795548;
+            border-bottom: 2px solid #d6bfa8;
+            padding-bottom: 8px;
+        }
+
+        /* 調整段落的文字間距 */
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* 設定表格的寬度和框線 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* 設定表格每一格的框線和間距 */
+        th,
+        td {
+            border: 1px solid #c9ad93;
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* 設定表格標題列的背景顏色 */
+        th {
+            background-color: #e8d5c0;
+            color: #654321;
+        }
+
+        /* 設定表格名稱的顏色 */
+        caption {
+            color: #795548;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* 設定照片的大小和圓角 */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* 設定照片區塊的位置 */
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* 調整照片下方的說明文字 */
+        figcaption {
+            color: #806b5a;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* 設定影片的大小和比例 */
+        .video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* 設定地圖的大小和外觀 */
+        .map {
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* 設定小提醒的背景和框線 */
+        #reminder {
+            background-color: #f5e9dc;
+            border-left: 4px solid #b89575;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        /* 設定頁尾的背景和文字位置 */
+        footer {
+            background-color: #e8d5c0;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 3px solid #b89575;
+        }
+
+        /* 設定頁尾連結的顏色 */
+        footer a {
+            color: #654321;
+        }
+
+        /* 滑鼠移到頁尾連結時加上底線 */
+        footer a:hover {
+            color: #a66b45;
+            text-decoration: underline;
+        }
+
+        /* 鍵盤選取頁尾連結時顯示外框 */
+        footer a:focus-visible {
+            outline: 2px solid #654321;
+            outline-offset: 3px;
+        }
+                /* 螢幕比較小時，調整網頁的間距 */
+        @media (max-width: 600px) {
+            nav, main {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            iframe {
+                max-width: 100%;
+            }
+        }
+    
+
+/* 原本三處行內樣式移至外部 CSS，維持 HW06 外觀 */
+.visit-emphasis {
+    color: #795548;
+    font-weight: bold;
+}
+
+.reminder-heading {
+    color: #795548;
+}
+
+.footer-author {
+    color: #806b5a;
+    font-size: 14px;
+}
